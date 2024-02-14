@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="To-Do-Lists With Web Components">
+
+    <title>To-Do-Lists With Web Components</title>
+    <link rel="stylesheet" href="./resources/styles.css">
+</head>
+
+<body>
+    <main id="to-do-lists">
+        <div class="listDiv">
+            <div class="butttonDiv"><button class="button"></button></div>
+            <list-item name="Meditation"></list-item>
+        </div>
+        <div class="listDiv">
+            <div class="butttonDiv"><button class="button"></button></div>
+            <list-item name="Pick up Anna"></list-item>
+        </div>
+        <div class="listDiv">
+            <div class="butttonDiv"><button class="button"></button></div>
+            <list-item name="Set up meeting with Jay"></list-item>
+        </div>
+        <div class="listDiv">
+            <div class="butttonDiv"><button class="button"></button></div>
+            <list-item name="Finish Daily Ui"></list-item>
+        </div>
+        <div class="listDiv">
+            <div class="butttonDiv"><button class="button"></button></div>
+            <list-item name="Second edits on article"></list-item>
+        </div>
+        <div class="listDiv">
+            <div class="butttonDiv"><button class="button"></button></div>
+            <list-item name="Email Chris"></list-item>
+        </div>
+        <p class="pull">Pull from recurring lists</p>
+        <div id="recurringDiv">
+            <recurring-button name="Daily"></recurring-button>
+            <recurring-button name="Weekly"></recurring-button>
+            <recurring-button name="Monthly"></recurring-button>
+            <recurring-button name="Occasional"></recurring-button>
+        </div>
+    </main>
+    <script src="resources/index.js"></script>
+    <script src="resources/listSchedule.js"></script>
+</body>
+
+</html>

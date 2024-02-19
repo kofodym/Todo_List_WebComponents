@@ -5,44 +5,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="To-Do-Lists With Web Components">
-
     <title>To-Do-Lists With Web Components</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./resources/styles.css">
 </head>
 
 <body>
     <main id="to-do-lists">
-        <div class="listDiv">
-            <div class="butttonDiv"><button class="button"></button></div>
-            <list-item name="Meditation"></list-item>
+        <div class="inner-container">
+            <!-- <back-arrows></back-arrows> -->
+            <div class="back-arrow">
+                <i class="material-symbols-sharp">arrow_back</i>
+                <h1>Back to lists</h1>
+            </div>
+
+            <!-- <today-items></today-items> -->
+            <div class="today">
+                <h2>TODAY</h2>
+                <i class="material-symbols-sharp">add_circle</i>
+            </div>
+
+            <!-- <progress-bar></progress-bar> -->
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <p class="progress-percentage"> 0% complete</p>
+            </div>
+
+            <!-- <list-items></list-items> -->
+            <div class="list-items">
+                <div class="listDiv">
+             
+                    <i class="material-symbols-sharp list-button">radio_button_unchecked</i>
+                   
+                    <list-item name="Meditation"></list-item>
+                </div>
+                <div class="listDiv">
+                        <i class="material-symbols-sharp list-button">radio_button_unchecked</i>
+                    <!-- <div class="butttonDiv"><button class="list-button"></button></div> -->
+                    <list-item name="Pick up Anna"></list-item>
+                </div>
+                <div class="listDiv">
+                    <!-- <button class="list-button"></button> -->
+                        <i class="material-symbols-sharp list-button">radio_button_unchecked</i>
+                    <list-item name="Set up meeting with Jay"></list-item>
+                </div>
+                <div class="listDiv">
+                    <!-- <button class="list-button"></button> -->
+                        <i class="material-symbols-sharp list-button">radio_button_unchecked</i>
+                    <list-item name="Finish Daily Ui"></list-item>
+                </div>
+                <div class="listDiv">
+                        <i class="material-symbols-sharp list-button">radio_button_unchecked</i>
+                    <!-- <button class="list-button"></button> -->
+                    <list-item name="Second edits on article"></list-item>
+                </div>
+                <!-- <div class="listDiv"> -->
+                    <!-- <button class="list-button"></button> -->
+                        <i class="material-symbols-sharp list-button">radio_button_unchecked</i>
+                    <list-item name="Email Chris"></list-item>
+                </div>
+            </div>
+            <hr />
+
+            <!-- <recurringSchedules></recurringSchedules> -->
+            <p class="pull">Pull from recurring lists</p>
+            <div id="recurringDiv">
+                <recurring-lists name="Daily"></recurring-lists>
+                <recurring-lists name="Weekly"></recurring-lists>
+                <recurring-lists name="Monthly"></recurring-lists>
+                <recurring-lists name="Occasional"></recurring-lists>
+            </div>
         </div>
-        <div class="listDiv">
-            <div class="butttonDiv"><button class="button"></button></div>
-            <list-item name="Pick up Anna"></list-item>
-        </div>
-        <div class="listDiv">
-            <div class="butttonDiv"><button class="button"></button></div>
-            <list-item name="Set up meeting with Jay"></list-item>
-        </div>
-        <div class="listDiv">
-            <div class="butttonDiv"><button class="button"></button></div>
-            <list-item name="Finish Daily Ui"></list-item>
-        </div>
-        <div class="listDiv">
-            <div class="butttonDiv"><button class="button"></button></div>
-            <list-item name="Second edits on article"></list-item>
-        </div>
-        <div class="listDiv">
-            <div class="butttonDiv"><button class="button"></button></div>
-            <list-item name="Email Chris"></list-item>
-        </div>
-        <p class="pull">Pull from recurring lists</p>
-        <div id="recurringDiv">
-            <recurring-button name="Daily"></recurring-button>
-            <recurring-button name="Weekly"></recurring-button>
-            <recurring-button name="Monthly"></recurring-button>
-            <recurring-button name="Occasional"></recurring-button>
-        </div>
+
     </main>
     <script src="resources/index.js"></script>
     <script src="resources/listSchedule.js"></script>

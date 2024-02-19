@@ -1,4 +1,4 @@
-class Period extends HTMLElement {
+class Recur extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `<button class="recur">${this.getAttribute(
@@ -7,4 +7,4 @@ class Period extends HTMLElement {
   }
 }
 
-window.customElements.define("recurring-button", Period);
+window.customElements.define("recurring-lists", Recur);
